@@ -29,10 +29,8 @@ public class IcoValidator {
 
             a %= 11;
             c = 11 - a;
+            c %= 10;
 
-            if(c==10) {
-                c = 0;
-            }
             if(Integer.valueOf(icoNumbers[7]) != c ) {
                 throw new Exception(String.format("Given check number (%s) is different than expected check number (%d).",icoNumbers[7], c));
             }
