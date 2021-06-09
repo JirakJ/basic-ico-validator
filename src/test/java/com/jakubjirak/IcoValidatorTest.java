@@ -24,7 +24,7 @@ public class IcoValidatorTest {
     }
 
     @ParameterizedTest
-    @DisplayName("Just check validity of given IČOs")
+    @DisplayName("Just check validity of null as input")
     @NullSource
     void checkNullInput(String ico) {
         assertTrue(icoValidator.check(ico));
